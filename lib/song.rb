@@ -20,11 +20,19 @@ class Song
   end
   
   def self.genres
-    return @@genres
+    unique_genres = []
+    
+    @@genres.each {|genre| unique_genres << genre if !unique_genres.include?(genre)}
+    
+    return unique_genres
   end
   
   def self.artists
-    return @@artists
+    unique_genres = []
+    
+    @@genres.each {|genre| unique_genres << genre if !unique_genres.include?(genre)}
+    
+    return unique_genres
   end
   
 end

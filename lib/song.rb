@@ -32,7 +32,7 @@ class Song
     
     @@artists.each {|artist| unique_artists << artist if !unique_artists,include?(artist)}
     
-    return unique_genres
+    return unique_artists
   end
   
 end

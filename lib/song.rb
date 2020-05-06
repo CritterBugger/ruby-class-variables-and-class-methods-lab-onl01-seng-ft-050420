@@ -49,4 +49,18 @@ class Song
     return genres_hash
   end
   
+  def self.genre_count
+    genres_hash = {}
+    
+    @@genres.each do |genre|
+      if genres_hash[genre] == NIL
+        genres_hash[genre] = 1
+      else
+        genres_hash[genre] += 1
+      end
+    end
+    
+    return genres_hash
+  end
+  
 end

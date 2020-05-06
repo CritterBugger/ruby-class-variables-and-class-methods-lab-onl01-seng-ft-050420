@@ -28,9 +28,9 @@ class Song
   end
   
   def self.artists
-    unique_genres = []
+    unique_artists = []
     
-    @@genres.each {|genre| unique_genres << genre if !unique_genres.include?(genre)}
+    @@artists.each {|artist| unique_artists << artist if !unique_artists,include?(artist)}
     
     return unique_genres
   end

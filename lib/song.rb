@@ -40,8 +40,13 @@ class Song
     
     @@genres.each do |genre|
       if genres_hash[genre] == NIL
-        genres
+        genres_hash[genre] = 1
+      else
+        genres_hash[genre] += 1
+      end
     end
+    
+    return genres_hash
   end
   
 end

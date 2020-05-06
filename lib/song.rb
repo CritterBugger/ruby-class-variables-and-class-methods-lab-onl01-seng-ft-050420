@@ -35,4 +35,6 @@ class Song
     return unique_artists
   end
   
+  def self.genre_count
+  
 end
